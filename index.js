@@ -1,10 +1,13 @@
 document.getElementById("myForm").addEventListener("submit", function(event) {
-    event.preventDefault(); 
+    event.preventDefault();
+    
     
 
     var email = document.getElementById("exampleInputEmail1").value;
     var password = document.getElementById("exampleInputPassword1").value;
     var isChecked = document.getElementById("exampleCheck1").checked;
+
+    alert(email+" "+password);
 
    
     var displayDiv = document.getElementById("displayData");
@@ -12,6 +15,8 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
                             "<p>Email: " + email + "</p>" +
                             "<p>Password: " + password + "</p>" +
                             "<p>Checkbox Checked: " + isChecked + "</p>";
+
+                            
 
     
     console.log("Email:", email);
